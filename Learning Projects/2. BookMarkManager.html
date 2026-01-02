@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMarK Manager</title>
+    <style>
+      /* This CSS is written by ai , i am currently learning html */
+      /* =========================
+   Global Dark Glass Theme
+========================= */
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Arial, sans-serif;
+        background: radial-gradient(circle at top, #0f172a, #020617);
+        margin: 0;
+        padding: 40px 20px;
+        color: #e5e7eb;
+        min-height: 100vh;
+      }
+
+      /* =========================
+   Headings
+========================= */
+
+      h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        color: #e0e7ff;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        margin: 50px auto 15px;
+        max-width: 600px;
+        font-size: 1.4rem;
+        color: #93c5fd;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin-top: 6px;
+        background: linear-gradient(90deg, #60a5fa, #818cf8);
+        border-radius: 10px;
+      }
+
+      /* =========================
+   List Layout
+========================= */
+
+      ul {
+        list-style: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      li {
+        margin-bottom: 14px;
+      }
+
+      /* =========================
+   Glassmorphism Cards
+========================= */
+
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 15px 20px;
+        border-radius: 16px;
+        text-decoration: none;
+        color: #e5e7eb;
+
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+        transition: all 0.35s ease;
+      }
+
+      /* =========================
+   Icons (Auto from Domain)
+========================= */
+
+      a::before {
+        content: "";
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+      }
+
+      /* Primary bookmarks icons */
+      a[href*="google"]::before {
+        background-image: url("https://www.google.com/favicon.ico");
+      }
+      a[href*="facebook"]::before {
+        background-image: url("https://www.facebook.com/favicon.ico");
+      }
+      a[href*="instagram"]::before {
+        background-image: url("https://www.instagram.com/favicon.ico");
+      }
+      a[href*="youtube.com"]::before {
+        background-image: url("https://www.youtube.com/favicon.ico");
+      }
+      a[href*="snapchat"]::before {
+        background-image: url("https://www.snapchat.com/favicon.ico");
+      }
+
+      /* Secondary bookmarks icons */
+      a[href*="chatgpt"]::before {
+        background-image: url("https://chatgpt.com/favicon.ico");
+      }
+      a[href*="reddit"]::before {
+        background-image: url("https://www.reddit.com/favicon.ico");
+      }
+      a[href*="leetcode"]::before {
+        background-image: url("https://leetcode.com/favicon.ico");
+      }
+      a[href*="whatsapp"]::before {
+        background-image: url("https://web.whatsapp.com/favicon.ico");
+      }
+      a[href*="music.youtube"]::before {
+        background-image: url("https://music.youtube.com/favicon.ico");
+      }
+
+      /* =========================
+   Hover & Interaction
+========================= */
+
+      a:hover {
+        transform: translateY(-6px) scale(1.02);
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: 0 30px 60px rgba(59, 130, 246, 0.35);
+        border-color: rgba(147, 197, 253, 0.6);
+        color: #bfdbfe;
+      }
+
+      a:active {
+        transform: scale(0.98);
+      }
+
+      /* =========================
+   Responsive Tweaks
+========================= */
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.25rem;
+        }
+
+        a {
+          padding: 13px 16px;
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bookmark Manager</h1>
+    <h2>Primary Bookmark</h2>
+    <ul>
+      <li><a href="http://google.com">google</a></li>
+      <li><a href="http://facebook.com">facebook</a></li>
+      <li><a href="http://instagram.com">instagram</a></li>
+      <li><a href="http://youtube.com">youtube</a></li>
+      <li><a href="http://snapchat.com">snapchat</a></li>
+    </ul>
+    <h2>Secondary BookMarK</h2>
+    <ul>
+      <li><a href="http://chatgpt.com">chatgpt</a></li>
+      <li><a href="http://reddit.com">reddit</a></li>
+      <li><a href="http://leetcode.com">leetcode</a></li>
+      <li><a href="http://web.whatsapp.com">whatsapp</a></li>
+      <li><a href="http://music.youtube.com">Youtube Music</a></li>
+    </ul>
+  </body>
+</html>
