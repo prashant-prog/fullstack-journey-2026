@@ -1,0 +1,10 @@
+document.getElementById()
+document.getElementById().id
+document.getElementById().className
+document.getElementById().getAttribute('attribute name')
+document.getElementById().setAttribute('attribute name','attribute value')
+tag.attribute_name.property = 'value' #example: title.style.backgroundColor='green';
+title.textContent
+title.innerHTML
+title.innerText
+document.getElementByClassName('className');
