@@ -1,3 +1,7 @@
+All DOM Selectors
+
+
+
 document.getElementById()
 document.getElementById().id
 document.getElementById().className
@@ -8,3 +12,7 @@ title.textContent
 title.innerHTML
 title.innerText
 document.getElementByClassName('className');
+document.querySelector(tag_name)
+document.querySelector(className ex: .box)
+document.querySelector(id name ex: #box)
+document.querySelector('input[type="password"]) #(tag_name[attribute="value"])
